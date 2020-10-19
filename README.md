@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Steps
+1. Get TMDB api from ([TMDB](https://www.themoviedb.org/))
+2. Create a react app ([Create React App](https://github.com/facebook/create-react-app))
+3. Setup firebase hosting
+4. Install axios (`npm install axios`)
+5. Fetch data from the TMDB api 
+
 
 ## Available Scripts
 
