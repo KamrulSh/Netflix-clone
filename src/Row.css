@@ -23,7 +23,7 @@
 }
 
 .row__poster:hover {
-    transform: scale(1.09);
+    transform: scale(1.2);
 }
 
 .row__posterLarge {
@@ -31,5 +31,5 @@
 }
 
 .row__posterLarge:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
