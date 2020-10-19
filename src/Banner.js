@@ -24,13 +24,9 @@ function Banner() {
     console.log(movie);
 
     function truncateString(str, num) {
-        // If the length of str is less than or equal to num
         // just return str--don't truncate it.
-        if (str?.length <= num) {
-            return str;
-        }
         // Return str truncated with '...' concatenated to the end of str.
-        return str?.slice(0, num) + "...";
+        return str?.length <= num ? str : str?.slice(0, num) + "...";
     }
 
     return (
@@ -51,7 +47,7 @@ function Banner() {
                     <button className="banner__button">My List</button>
                 </div>
                 <h3 className="banner__description">
-                    {truncateString(movie?.overview, 150)}
+                    {truncateString(movie?.overview, 200)}
                 </h3>
             </div>
             <div className="banner--fadeBottom" />
