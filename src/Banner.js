@@ -21,7 +21,7 @@ function Banner() {
         fetchData();
     }, []);
 
-    console.log(movie);
+    //console.log(movie);
 
     function truncateString(str, num) {
         // just return str--don't truncate it.
@@ -34,7 +34,7 @@ function Banner() {
             className="banner"
             style={{
                 backgroundSize: "cover",
-                background: `url(${base_url}${movie?.backdrop_path})`,
+                backgroundImage: `url(${base_url}${movie?.backdrop_path})`,
                 backgroundPosition: "center center",
             }}
         >
