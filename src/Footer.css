@@ -1,0 +1,16 @@
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    height: 60px;
+    font-weight: 500;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer__copyright--link {
+    color: tomato;
+}
+
+.footer__copyright--link:hover {
+    color: red;
+}

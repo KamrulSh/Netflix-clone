@@ -4,6 +4,7 @@ import Row from './Row';
 import Banner from './Banner'
 import requests from './request';
 import Nav from './Nav';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Row title="Fantasy Movies" fetchUrl={requests.fetchFantasyMovies} />
       <Row title="Thriller Movies" fetchUrl={requests.fetchThrillerMovies} />
       <Row title="Western Movies" fetchUrl={requests.fetchWesternMovies} />
+      <Footer />
     </div>
   );
 }
