@@ -1,3 +1,6 @@
+## Deployed website
+https://netflix-clone-react-44053.web.app/
+
 ## Steps
 1. Get TMDB api from ([TMDB](https://www.themoviedb.org/))
 2. Create a react app ([Create React App](https://github.com/facebook/create-react-app))
