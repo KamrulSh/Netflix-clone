@@ -6,6 +6,7 @@
 5. Fetch all movie data from the TMDB api
 6. Build the rows for showing movies
 7. Build the banner and navbar at top position
+8. Add movie trailer from youtube (`npm i react-youtube`), (`npm i movie-trailer`)
 
 
 ## Available Scripts
