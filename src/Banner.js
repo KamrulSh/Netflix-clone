@@ -42,6 +42,8 @@ function Banner() {
                 <h1 className="banner__title">
                     {movie?.name || movie?.title || movie?.original_name}
                 </h1>
+                <h3 className="banner__rating">{movie?.vote_average}</h3>
+                <h3 className="banner__release">{movie?.first_air_date}</h3>
                 <div className="banner__buttons">
                     <button className="banner__button">Play</button>
                     <button className="banner__button">My List</button>

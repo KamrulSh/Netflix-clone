@@ -1,21 +1,21 @@
 .banner {
     color: white;
     object-fit: contain;
-    height: 450px;
+    height: 500px;
     margin-bottom: 20px;
 }
 
 .banner__contents {
     margin-bottom: 20px;
     margin-left: 20px;
-    padding-top: 140px;
-    height: 190px;
+    padding-top: 120px;
+    height: 230px;
 }
 
 .banner__title {
     font-size: 3rem;
     font-weight: 700;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .banner__description {
@@ -25,6 +25,16 @@
     padding-top: 1rem;
     max-width: 400px;
     height: 80px;
+}
+
+.banner__rating {
+    color: yellow;
+    font-size: 1.4rem;
+}
+
+.banner__release {
+    font-size: 1rem;
+    padding-bottom: 1rem;
 }
 
 .banner__button {
@@ -49,7 +59,7 @@
 }
 
 .banner--fadeBottom {
-    height: 7.4rem;
+    height: 8.2rem;
     background-image: linear-gradient(
         180deg,
         transparent,
