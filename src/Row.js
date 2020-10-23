@@ -27,7 +27,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
     //console.log(movies);
 
     const opts = {
-        height: "390",
+        height: "490",
         width: "100%",
         playerVars: {
             // https://developers.google.com/youtube/player_parameters
@@ -41,7 +41,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
             setTrailerUrl("");
             console.log(trailerUrl);
         } else {
-            movieTrailer(movie?.name || "")
+            movieTrailer(movie?.name || movie?.title || movie?.original_name || movie?.original_title)
                 .then((url) => {
                     const urlParams = new URLSearchParams(new URL(url).search);
                     setTrailerUrl(urlParams.get("v"));
