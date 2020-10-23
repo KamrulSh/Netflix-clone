@@ -2,16 +2,12 @@ import { useEffect, useState } from "react";
 import React from "react";
 import axios from "./axios";
 import "./Row.css";
-import YouTube from "react-youtube";
-import movieTrailer from "movie-trailer";
+
 
 const base_url = "https://image.tmdb.org/t/p/original";
 
 function Row({ title, fetchUrl, isLargeRow }) {
     const [movies, setmovies] = useState([]);
-    const [trailerUrl, setTrailerUrl] = useState("");
-
-    // a snippet of code which runs based on a specific condition
 
     useEffect(() => {
         // if [], then rum once and don't run again
@@ -26,29 +22,13 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
     //console.log(movies);
 
-    const opts = {
-        height: "390",
-        width: "100%",
-        playerVars: {
-            // https://developers.google.com/youtube/player_parameters
-            autoplay: 1,
-        },
-    };
-
-    // clicked item name's trailer is searched in youtube and return url if found
-    const handleClick = (movie) => {
-        if (trailerUrl) {
-            setTrailerUrl("");
-            console.log(trailerUrl);
-        } else {
-            movieTrailer(movie?.name || "")
-                .then((url) => {
-                    const urlParams = new URLSearchParams(new URL(url).search);
-                    setTrailerUrl(urlParams.get("v"));
-                    console.log(movie?.name, url);
-                })
-                .catch((error) => console.log(error));
-        }
+    let handleClick = (movie) => {
+        console.log(
+            movie?.id,
+            movie?.name || movie?.title,
+            base_url + movie?.backdrop_path
+        );
+        return movie?.id;
     };
 
     return (
@@ -72,7 +52,10 @@ function Row({ title, fetchUrl, isLargeRow }) {
                     />
                 ))}
             </div>
-            {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+
+            {/* movie details */}
+            {/* <MovieDetails /> */}
+            <h1>{console.log(movies.id)}</h1>
         </div>
     );
 }
