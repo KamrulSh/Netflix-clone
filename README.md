@@ -10,6 +10,8 @@ https://netflix-clone-react-44053.web.app/
 6. Build the rows for showing movies
 7. Build the banner and navbar at top position
 8. Add movie trailer from youtube (`npm i react-youtube`), (`npm i movie-trailer`)
+9. Buid the app (`npm run build`)
+10. Deploy to firebase (`firebase init`) (`firebase deploy`)
 
 
 ## Available Scripts
