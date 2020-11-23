@@ -1,7 +1,7 @@
 ## Deployed website
 https://netflix-clone-kamrulsh.netlify.app/ <br />
 or <br />
-https://netflix-clone-kamrulsh.web.app/
+https://netflix-clone-react-3eeae.web.app/
 
 ## Steps
 1. Get TMDB api from ([TMDB](https://www.themoviedb.org/))
