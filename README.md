@@ -1,3 +1,6 @@
+## Deployed website
+https://netflix-clone-react-44053.web.app/
+
 ## Steps
 1. Get TMDB api from ([TMDB](https://www.themoviedb.org/))
 2. Create a react app ([Create React App](https://github.com/facebook/create-react-app))
@@ -6,6 +9,9 @@
 5. Fetch all movie data from the TMDB api
 6. Build the rows for showing movies
 7. Build the banner and navbar at top position
+8. Add movie trailer from youtube (`npm i react-youtube`), (`npm i movie-trailer`)
+9. Buid the app (`npm run build`)
+10. Deploy to firebase (`firebase init`) (`firebase deploy`)
 
 
 ## Available Scripts
